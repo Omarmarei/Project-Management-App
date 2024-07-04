@@ -1,39 +1,54 @@
-# Timer Challenge Game
+# Project Management App
 
-A simple timer challenge game built with React, featuring multiple difficulty levels and player name input.
+A project management app built with React, enabling users to create projects, add tasks, and manage them efficiently.
 
 ## Technologies Used
 - React
 - JavaScript
+- Tailwind CSS
 
 ## Hooks Used
-- useState
-- useRef
-- useImperativeHandle
+- `useState`
+- `useRef`
+- `useImperativeHandle`
 
 ## Features
-- Allows players to input their name
-- Provides multiple timer challenges with varying difficulty levels
-- Displays the result in a modal after the timer stops
+- Create and manage multiple projects
+- Add and delete tasks within projects
+- Select and display project details
+- Modal for invalid input handling
 
 ## Components
 
-### Player
+### Button
+- Renders a styled button component.
 
-- Displays the player's name and allows the player to input their name.
+### Input
+- Renders input fields with optional textarea support.
 
-### TimerChallenge
+### Modal
+- Displays a modal dialog for invalid input.
 
-- Provides a timer challenge with a start and stop functionality.
-- Displays the remaining time and shows a result modal when the timer stops.
+### NewProject
+- Renders a form to add new projects.
+- Displays a modal for invalid input.
 
-### ResultModal
+### NewTask
+- Renders an input field and button to add new tasks.
 
-- Displays the result of the timer challenge, including the score and remaining time.
-- Provides an option to reset the challenge.
+### NoProjectSelected
+- Displays a message and button when no project is selected.
+
+### ProjectsSidebar
+- Displays a list of projects and a button to add new projects.
+
+### SelectedProject
+- Displays the selected project details, tasks, and options to add or delete tasks.
+
+### Tasks
+- Displays the list of tasks for the selected project.
 
 ## Developer
-
 - Developed by Omar Marei in 2024 as a practice project for Udemy. Please note that this project includes a starter package from Udemy [React: The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux).
 
 
